@@ -104,6 +104,7 @@ namespace AirCommander
             else if (name.Equals("enemyPanel"))
             {
                 checkForHit(x, y, 1, "Player");
+                Thread.Sleep(500);
                 if(checkWinConditions() == -1) enemyTurn();
                 if(checkWinConditions() != -1)endGame(checkWinConditions());
             } 
